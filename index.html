@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WOW Barcelona – Descubre la ciudad</title>
+  <style>
+    :root {
+      --primary: #ffffff;
+      --accent: #f7b94a;
+      --bg: #054d88;
+      --text: #fafafa;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    .banner {
+      background-color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .banner img {
+      height: 150px;
+    }
+
+    .hero {
+      background-image: linear-gradient(
+      rgba(0, 0, 0, 0.250), 
+      rgba(0, 0, 0, 0.250)
+    ),
+    url('barcelona-panorama.png');
+      background-size: cover;
+      background-position: center;
+      height: calc(100vh - 150px);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      padding-top: 40px;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      padding: 20px;
+      color: #f7b94a;
+      border-radius: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+      margin-top: 0;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      max-width: 600px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .subtitle {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    .cta {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cta a {
+      background-color: #054d88;
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background-color: #f7b94a;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      .hero p {
+        font-size: 1.5rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .cta a {
+        width: 100%;
+        display: block;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <img src="wow-logo.png" alt="WOW Barcelona Logo">
+  </div>
+
+  <section class="hero">
+    <h1>Descubre Barcelona con WOW</h1>
+    <p>Muévete por la ciudad y encuentra todos sus secretos</p>
+    <div class="cta">
+      <a href="lugares.html">Empezar a explorar</a>
+    </div>
+  </section>
+
+</body>
+</html>

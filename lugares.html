@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lugares WOW Barcelona</title>
+  <style>
+    :root {
+      --primary: #ffffff;
+      --accent: #f6b84b;
+      --bg: #054d88;
+      --text: #fafafa;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    .banner {
+      background-color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .banner img {
+      height: 150px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--accent);
+      margin-bottom: 2rem;
+    }
+
+    .lugar {
+      background-color: #ffffff;
+      color: #054d88;
+      padding: 1.2rem;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid var(--accent);
+      border-radius: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .lugar img {
+      width: 100px;
+      height: 135px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .lugar-content {
+      flex: 1;
+    }
+
+    .lugar h2 {
+      margin: 0 0 0.5rem 0;
+    }
+
+    .lugar p {
+      margin: 0.5rem 0;
+    }
+
+    .lugar a {
+      background-color: #005B99;
+      color: #ffffff; 
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      margin-top: 0.5rem;
+      border-radius: 6px;
+    }
+
+    .lugar a:hover {
+      background-color: #f6b84b;
+      color: #ffffff;
+    }
+
+    .extra {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  text-align: center;
+  border: 2px dashed var(--accent);
+  border-radius: 10px;
+}
+
+.extra h2 {
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.extra p {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <img src="wow-logo.png" alt="WOW Barcelona Logo">
+  </div>
+
+  <div class="container">
+    <h1>Lugares WOW</h1>
+
+    <div class="lugar">
+      <img src="img/sagrada.png" alt="Sagrada Família">
+      <div class="lugar-content">
+        <h2>Sagrada Família</h2>
+        <p>¿Serás capaz de descubrir lo que se esconde entre sus piedras?</p>
+        <a href="https://www.google.com/maps?q=Sagrada+Família,+Barcelona" target="_blank">Cómo llegar</a>
+      </div>
+    </div>
+
+    <div class="lugar">
+      <img src="img/santpau.png" alt="Hospital de Sant Pau">
+      <div class="lugar-content">
+        <h2>Hospital de Sant Pau</h2>
+        <p>Camina hasta aquí desde cierto lugar... y algo inesperado podría pasarte.</p>
+        <a href="https://www.google.com/maps?q=Hospital+de+Sant+Pau,+Barcelona" target="_blank">Cómo llegar</a>
+      </div>
+    </div>
+
+    <div class="lugar">
+      <img src="img/barceloneta.png" alt="Barceloneta">
+      <div class="lugar-content">
+        <h2>Barceloneta</h2>
+        <p>El pasado olímpico guarda secretos que solo algunos descubren...</p>
+        <a href="https://www.google.com/maps?q=Homenatge+a+la+Barceloneta,+Barcelona" target="_blank">Cómo llegar</a>
+      </div>
+    </div>
+
+    <div class="lugar">
+      <img src="img/metro.png" alt="Metro">
+      <div class="lugar-content">
+        <h2>Estación de metro</h2>
+        <p>Antes de subir, asegúrate de tener la información que otros no tienen.</p>
+        <a href="https://www.google.com/maps?q=Estación+de+metro,+Barcelona" target="_blank">Cómo llegar</a>
+      </div>
+    </div>
+
+    <div class="lugar">
+      <img src="img/modernista.png" alt="Ruta Modernista">
+      <div class="lugar-content">
+        <h2>Ruta Modernista</h2>
+        <p>Visita al menos tres lugares clave y algo se desbloqueará solo para ti.</p>
+        <a href="https://www.google.com/maps?q=Casa+Batlló,+Barcelona" target="_blank">Cómo llegar</a>
+      </div>
+    </div>
+
+    <div class="lugar">
+      <img src="img/gotic.png" alt="Barri Gòtic">
+      <div class="lugar-content">
+        <h2>Barri Gòtic</h2>
+        <p>Calles que susurran secretos. Algunos solo los oyen si se detienen.</p>
+        <a href="https://www.google.com/maps?q=Barri+Gòtic,+Barcelona" target="_blank">Cómo llegar</a>
+      </div>
+    </div>
+
+    <div class="lugar">
+      <img src="img/born.png" alt="Born">
+      <div class="lugar-content">
+        <h2>Born</h2>
+        <p>El barrio del arte y los enigmas cotidianos. ¿Sabes por dónde empezar?</p>
+        <a href="https://www.google.com/maps?q=El+Born,+Barcelona" target="_blank">Cómo llegar</a>
+      </div>
+    </div>
+
+    <div class="lugar">
+      <img src="img/santantoni.png" alt="Sant Antoni">
+      <div class="lugar-content">
+        <h2>Sant Antoni</h2>
+        <p>Quizás no sea solo un barrio de cafés... sino de conexiones inesperadas.</p>
+        <a href="https://www.google.com/maps?q=Sant+Antoni,+Barcelona" target="_blank">Cómo llegar</a>
+      </div>
+    </div>
+
+   <div class="extra">
+  <h2>Y mucho más...</h2>
+  <p>¿Qué te deparará Barcelona...? Lo único seguro es que será WOW.</p>
+</div>
+
+
+<div class="cta" style="text-align: center; margin-top: 3rem;">
+      <a href="index.html" style="
+        background-color: var(--primary);
+        color: #005B99;
+        text-decoration: none;
+        padding: 0.7rem 1.4rem;
+        border-radius: 6px;
+        font-size: 1rem;
+        transition: background 0.3s;
+        display: inline-block;
+      ">← Volver</a>
+    </div>
+  </div>
+    
+
+</body>
+</html>
