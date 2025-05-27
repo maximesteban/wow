@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reto WOW – Quadrat Màgic</title>
+  <style>
+    :root {
+      --primary: #ffffff;
+      --accent: #f6b84b;
+      --bg: #054d88;
+      --text: #fafafa;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    .banner {
+      background-color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .banner img {
+      height: 120px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .intro, .steps, .reward {
+      background-color: rgba(255,255,255,0.08);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+    }
+
+    .intro p, .steps li, .reward p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .steps ul {
+      padding-left: 1.2rem;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .cta input[type="file"] {
+      display: none;
+    }
+
+    .upload-label {
+      background-color: var(--primary);
+      color: #054d88;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .upload-label:hover {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .upload-label {
+        width: 100%;
+        display: block;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <img src="wow-logo.png" alt="WOW Barcelona Logo" />
+  </div>
+
+  <div class="container">
+    <h1>El Quadrat Màgic: ¿casualidad o código secreto?</h1>
+    <div><img src="img/quadrat.jpeg" alt="Quadrat Màgic de la Sagrada Família" style="width: 100%; max-width: 400px; margin-top: 1rem; border-radius: 8px; display: block; margin-left: auto; margin-right: auto; padding-bottom: 20px;">
+</div>
+
+    <div class="intro">
+      <p>En la fachada del Naixement hay un cuadrado.  
+      16 números. Suma 33. Siempre.  
+      ¿Es solo un juego matemático… o una señal?</p>
+      <p>Encuéntralo. Descúbrelo. Y celebra que formas parte del mundo WOW.</p>
+    </div>
+
+    <div class="steps">
+      <ul>
+        <li>📍 Observa bien la fachada del Naixement.</li>
+        <li>🔍 Encuentra el Quadrat Màgic entre las esculturas.</li>
+        <li>📸 Hazte una foto con tu hallazgo (¡con orgullo!).</li>
+        <li>📤 Sube tu imagen y forma parte de los que lo lograron.</li>
+      </ul>
+    </div>
+<div class="share-instagram" style="margin-top: 2.5rem; text-align: center;">
+  <p style="margin-bottom: 0.8rem;">¿Lo has encontrado? ¡Compártelo con el mundo!</p>
+  <a href="https://www.instagram.com/" target="_blank" class="upload-label">
+    📸 Compartir en Instagram
+  </a>
+  <p style="margin-top: 0.8rem; font-size: 0.95rem; font-style: italic; color: #ddd;">
+    No olvides etiquetar a <strong>@wowbarcelona</strong> para celebrar tu hallazgo 🧩✨
+  </p>
+</div>
+</div>
+
+<script>
+  function copyLink() {
+    const dummy = document.createElement('input');
+    dummy.value = "https://tudominio.com/quadrat.html";
+    document.body.appendChild(dummy);
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+    alert("¡Enlace copiado al portapapeles!");
+  }
+</script>
+
+  </div>
+
+</body>
+</html>
