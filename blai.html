@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WOW – Calle Blai</title>
+  <style>
+    :root {
+      --primary: #ffffff;
+      --accent: #f6b84b;
+      --bg: #054d88;
+      --text: #fafafa;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: url('img/pintxos-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text);
+    }
+
+    .banner {
+      background-color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .banner img {
+      height: 120px;
+    }
+
+    .overlay {
+      background-color: rgb(5, 77, 136);
+      min-height: calc(100vh - 120px);
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      max-width: 600px;
+    }
+
+    .highlight {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      color: #fff;
+    }
+
+    .btn {
+      background-color: var(--primary);
+      color: #054d88;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      text-decoration: none;
+      margin: 0.5rem;
+      transition: background 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <img src="wow-logo.png" alt="WOW Barcelona Logo" />
+  </div>
+
+  <div class="overlay">
+    <h1>Calle Blai: el paraíso de los pintxos con recompensa</h1>
+
+    <p>Si estás aquí, ya formas parte de la experiencia WOW.  
+    Hoy tienes acceso a una promoción secreta en uno de nuestros restaurantes aliados. Solo por estar en el lugar correcto, en el momento justo:</p>
+
+    <p class="highlight">🥂 2x1 en pintxos de 18:00 a 20:00</p>
+    <p class="highlight">🍷 15% de descuento si vienes de WOW</p>
+    <p class="highlight">🎁 Sube en el ranking WOW del barrio</p>
+
+    <div>
+      <a href="#" class="btn" onclick="showQR()">📲 Mostrar QR del hotel</a>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div id="qrModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.75); z-index:9999; justify-content:center; align-items:center;">
+  <div style="background:#fff; padding:2rem; border-radius:12px; text-align:center; position:relative; max-width:95%; max-height:95%;">
+    <h2 style="color:#054d88; margin-bottom:1.2rem;">DESCUENTO WOW</h2>
+    <img src="img/QR.png" alt="QR del hotel" style="max-width:450px; width:100%; margin-bottom:2rem;" />
+    <br/>
+    <button onclick="closeQR()" style="background:#054d88; color:#fff; padding:0.8rem 1.6rem; border:none; border-radius:6px; font-size:1rem; cursor:pointer;">Cerrar</button>
+  </div>
+</div>
+
+</div>
+<script>
+  function showQR() {
+    document.getElementById("qrModal").style.display = "flex";
+  }
+
+  function closeQR() {
+    document.getElementById("qrModal").style.display = "none";
+  }
+</script>
+
+
+</body>
+</html>
